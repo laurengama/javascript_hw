@@ -1,9 +1,10 @@
 // from data.js
 var tableData = data;
 
-// YOUR CODE HERE!
+// Get a reference to the table body
 var tbody = d3.select("tbody");
 
+// create table using data.js 
 data.forEach((UFOsightings) => {
     var row = tbody.append("tr");
     Object.entries(UFOsightings).forEach(([key, value]) => {
@@ -13,6 +14,7 @@ data.forEach((UFOsightings) => {
 });
 
 
+// FILTER BUTTON
 
 // Select the submit button
 var submit = d3.select("#filter-btn");
